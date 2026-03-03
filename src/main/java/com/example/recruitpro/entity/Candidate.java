@@ -2,6 +2,7 @@ package com.example.recruitpro.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.Length;
 
 @Getter
 @Setter
@@ -28,4 +29,8 @@ public class Candidate {
 
     @Column(name = "years_of_experience", nullable = false)
     private Integer yearsOfExperience;
+@Column( length = 255)
+    private String address ;
+@Column ( length = 200)
+private String bio  ;
 }
